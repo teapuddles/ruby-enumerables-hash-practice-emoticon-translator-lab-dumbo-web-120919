@@ -1,6 +1,7 @@
 require 'yaml'
 require 'pry'
 
+<<<<<<< HEAD
 def load_library(file_path)
   translation = {'get_meaning' => {}, 'get_emoticon' => {}}
   file = YAML.load_file(file_path)
@@ -9,6 +10,10 @@ def load_library(file_path)
     translation['get_emoticon'][mote[0]] = mote[1]
   end
   return translation             
+=======
+def load_library
+  yaml.load(./emoticons.yml)
+>>>>>>> 87f834d84e43e5ff7698cf8f3947d26421abf437
 end
 
 def get_japanese_emoticon(file_path, emote)
